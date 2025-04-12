@@ -1,0 +1,19 @@
+{
+  "name": "systemE - Analyse de Loterie",
+  "short_name": "systemE",
+  "description": "Application d'analyse des résultats de la loterie",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#7C4DFF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["utilities", "productivity"]
+}
