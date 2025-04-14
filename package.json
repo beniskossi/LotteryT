@@ -4,12 +4,19 @@
   "type": "module",
   "description": "Lottery tracking application",
   "license": "MIT",
+  "homepage": "https://beniskossi.github.io/LotteryT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beniskossi/LotteryT.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "start": "node server/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/public"
   },
   "dependencies": {
     "@esbuild-kit/core-utils": "^3.3.2",
@@ -92,6 +99,7 @@
     "autoprefixer": "^10.4.20",
     "drizzle-kit": "^0.30.4",
     "esbuild": "^0.25.1",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "tsx": "^4.19.1",
